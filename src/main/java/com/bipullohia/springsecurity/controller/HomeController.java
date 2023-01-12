@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class SecurityController {
+public class HomeController {
 
 	//We want everyone to access this url
 	@GetMapping("/")
