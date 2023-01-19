@@ -15,13 +15,13 @@ public class HomeController {
 	//We will want to allow user and admin user to access this url
 	@GetMapping("/user")
 	public String getUser() {
-		return ("<h1>User/Admin, welcome to the dark side everyone!</h1>");
+		return ("<h1>User/Admin, welcome to the dark side!</h1>");
 	}
 
 	//We only want admin user to access this url
 	@GetMapping("/admin")
 	public String getAdmin() {
-		return ("<h1>Admin, welcome to the dark side!</h1>");
+		return ("<h1>Admin, welcome to your secret dark side!</h1>");
 	}
 	
 	//A fun error servlet
