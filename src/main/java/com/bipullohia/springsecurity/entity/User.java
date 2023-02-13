@@ -8,9 +8,9 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity
-@Table(name="users")
-@EnableAutoConfiguration
+//@Entity
+//@Table(name="users")
+//@EnableAutoConfiguration
 public class User {
 
 	@Id

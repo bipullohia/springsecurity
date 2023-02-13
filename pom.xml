@@ -87,7 +87,26 @@
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-ldap</artifactId>
 		</dependency>
-		
+
+		<!-- Needed for working with JWTs -->
+		<!-- a lib to create and validate JWTs -->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>		
+		<!-- jaxb api since we will work with those. Since it's Java 9+ we have to add it manually' -->
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		<!-- Needed to have sso auth capabilities for oauth authentication-->
+		<dependency>
+			<groupId>org.springframework.security.oauth.boot</groupId>
+			<artifactId>spring-security-oauth2-autoconfigure</artifactId>
+			<version>2.1.8.RELEASE</version>
+		</dependency>	
 	</dependencies>
 
 	<build>

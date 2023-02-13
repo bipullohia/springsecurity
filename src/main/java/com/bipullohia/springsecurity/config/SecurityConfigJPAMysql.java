@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.SecurityFilterChain;
 
 
-@Configuration
+//@Configuration
 public class SecurityConfigJPAMysql {
 
 	//this is enough in Spring 5.7+ to let Srping Security know that it has to feth user details from the service
